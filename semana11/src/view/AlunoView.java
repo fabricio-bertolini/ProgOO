@@ -1,3 +1,5 @@
+//Equipe: Fabr√≠cio Valladares Bertolini ; Louise Laclau
+
 package view;
 
 import java.awt.BorderLayout;
@@ -129,7 +131,7 @@ public class AlunoView extends JFrame implements ActionListener {
 	public static void main(String[] args) {
 		new AlunoView();
 		
-		/*System.out.println("Qual aÁ„o do CRUD?");
+		/*System.out.println("Qual a√ß√£o do CRUD?");
 		Scanner in = new Scanner(System.in);
 		
 		String resposta = in.next();
