@@ -8,9 +8,9 @@ import java.sql.SQLException;
 public class ConnectionFactory {
 	
 	private static final String DRIVE = "com.mysql.jdbc.Driver";
-	private static final String URL = "jdbc:mysql://:3306/test_poo?useTimezone=true&serverTimezone=UTC"; 
-	private static final String USER = ""; 
-	private static final String SENHA = ""; 
+	private static final String URL = "jdbc:mysql://db-poo.cjovukabykuf.us-east-1.rds.amazonaws.com:3306/test_poo?useTimezone=true&serverTimezone=UTC"; 
+	private static final String USER = "admin"; 
+	private static final String SENHA = "super16768"; 
 	
 		
 	public static Connection getConnection() {
@@ -21,7 +21,7 @@ public class ConnectionFactory {
 	        return DriverManager.getConnection(
 	        		URL, USER, SENHA);
 	    } catch (SQLException e) {
-	        throw new RuntimeException("Erro na conex„o com o Banco de Dados!",e);
+	        throw new RuntimeException("Erro na conex√£o com o Banco de Dados!",e);
 	    	//System.out.println(e);
 	    }
 	}
